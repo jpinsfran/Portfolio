@@ -1,0 +1,413 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #171616;
+	font-family: "Montserrat", sans-serif;
+
+}
+.navigation{
+	background-color: #0f0f0f;
+	color: white;
+	height: 80px;
+	animation-name: navigation;
+	animation-duration:2s;
+}
+.navigation ul{
+	margin-top: 0px;
+	list-style: none;
+	padding-left: 0;
+	text-align: right;
+	height: 80px;
+
+}
+.navigation li{
+	display: inline-block;
+	padding-right: 40px;
+	height: 80px;
+	font-size: 16px;
+	line-height: 80px;
+	
+}
+.navigation a{
+	color: white;
+	text-decoration: none;
+	font-weight: 100;
+}
+.navigation a:hover{
+	color: #b00202;
+	font-weight: 400;
+}
+
+.navigation li.icone-lista{
+	display: none;
+}
+
+.capa{
+	color: white;
+}
+
+.capa span{
+	color: #b00202;
+	display: block;
+
+}
+
+.capa div{
+	display: inline-block;
+	height: 360px;
+	
+}
+
+.profile-pic{
+	width: 40%;
+	text-align: center;
+	margin-top: 160px;
+
+	animation-name: profile-capa;
+	animation-duration: 2s;
+}
+
+.profile-pic img{
+	width: 360px;
+	border-radius: 360px;
+}
+
+.profile-title{
+	vertical-align: top;
+	margin-top: 240px;
+	width: 59%;
+	animation-name: titulo-capa;
+	animation-duration: 2s;
+}
+
+.profile-title h1{
+	text-transform: uppercase;
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 48px
+}
+.profile-title h2{
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 24px;
+	margin-top: -16px;
+}
+.main {
+	padding: 0px 160px 80px 160px;
+	animation-name: conteudo;
+	animation-duration: 2s;
+}
+.cv-pic{
+	float: right;
+	width: 320px;
+	margin-top: 32px;
+	border-radius: 24px;
+}
+
+.main h1{
+	color: white;
+	font-weight: normal;
+}
+
+.main h2{
+	margin-top: 40px;
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.main h3 {
+	color: #b00202;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.main p{
+	color: white;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 24px;
+	text-align: left;
+
+}
+
+.caminho{
+	list-style: none;
+	padding-left: 0;
+	color: grey;
+	margin-top: 16px;
+	margin-bottom: 40px
+}
+
+.caminho li{
+	display: inline-block;
+}
+
+.social-img {
+	width: 50px;
+	margin-right: 16px;
+}
+.retornar {
+	color: grey;
+	font-size: 12px;
+}
+
+.miniatura {
+	width: 320px;
+	height: 320px;
+	display: inline-block;
+	margin-right: 24px;
+	margin-bottom: 24px;
+	background-size: contain;
+	overflow: hidden;
+	border-radius: 24px;
+	border: 4px solid #b00202;
+}
+.pagina{
+	color: grey;
+}
+
+.blackbox{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0;
+	padding-top: 140px;
+	trasition: 1s;
+}
+.blackbox:hover{
+	opacity: 0.9; 
+	trasition: 1s;
+}
+.blackbox-text {
+	text-align: center;
+	vertical-align: center;
+}
+.blackbox-text h1{
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #b00202;
+	font-weight: 700;
+	margin-top: 0;
+
+}
+.blackbox-text h2{
+	font-size: 16px;
+	text-transform: none;
+	color: black;
+	font-weight: 100;
+	margin-top: 0;
+
+}
+.miniatura a{
+	text-decoration: none;
+}
+.icone{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 24px;
+	margin-bottom: 24px;
+	background-size: contain;
+}
+.icone:hover{
+	opacity: 0.5;
+}
+.icone a{
+	text-decoration: none;
+}
+.icone-box{
+	width: 100%;
+	height: 100%;
+	border-radius: 40px;
+}
+
+@keyframes profile-capa{
+	0% {opacity: 0;transform: traslate(0px,20px)}
+	100%{opacity: 1;transform: traslate(0px,0px)}
+}
+
+@keyframes titulo-capa{
+	0% {opacity: 0;transform: traslate(0px,-20px)}
+	100%{opacity: 1;transform: traslate(0px,0px)}
+}
+@keyframes conteudo{
+	0% {opacity: 0;transform: traslate(-20px,0px)}
+	100%{opacity: 1;transform: traslate(-20px,0px)}
+}
+
+@keyframes navigation{
+	0% {opacity: 0}
+	50%{opacity: 0}
+	100%{opacity: 1}
+}
+
+
+.trabalhos {
+	width: 512px;
+	height: 390px;
+	display: inline-block;
+	margin-right: 24px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	background-size: contain;
+	overflow: hidden;
+	border-radius: 24px;
+	border: 1px solid #b00202;
+}
+
+.mobile-pic{
+	width: 200px;
+	height: 400px;
+	display: inline-block;
+	margin-right: 40px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	background-size: contain;
+	overflow: hidden;
+	border-radius: 24px;
+
+}
+@media (max-width: 1000px){
+
+.navigation{
+	height: 40px;
+	font-size: 16px;
+	line-height: 24px;
+	background-color: #171616;
+}
+.navigation li{
+	display: none;
+}
+.navigation li.icone-lista{
+	display: inline-block;
+}
+.navigation li.icone-lista:hover{
+	color: #b00202 ;
+	cursor: pointer;
+}
+
+.capa div{
+	display: block;
+	height: auto;	
+}
+.caminho{
+	display: none;
+}
+.profile-pic{
+	margin-top: 40px;
+	width: 100%;
+}
+.profile-pic img{
+	margin-top: 0;
+	max-width: 50%;
+}
+
+.profile-title{
+	text-align: center;
+	width: 100%;
+	margin-top: 0px;
+}
+.profile-title h1{
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-left: 20px;
+	font-size: 40px;
+}
+.profile-title h2{
+	font-size: 16px;
+	margin-left: 20px;
+	margin-left: 20px;
+}
+.main{
+	padding: 0px 5% 0px 5%;
+}
+.main p{
+	text-align: left;
+	line-height: 24px;
+	font-size: 12px;
+}
+.main a{
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+.caminho{
+	margin-top: 0;
+}
+.caminho li{
+	margin-top: 16px;
+	font-size: 10px;
+}
+.cv-pic{
+	float: none;
+	max-width: 50%;
+	margin-right: 0;
+}
+
+.miniatura{
+	width: 160px;
+	height: 160px;
+	max-width: 100%;
+	background-size: auto 100%;
+	margin-left: 0;
+	margin-right: 16px;
+	background-size: contain;
+}
+.blackbox{
+	opacity: 0.6;
+}
+.blackbox-text h1{
+	font-size: 16px;
+
+}
+.blackbox-text h2{
+	font-size: 12px;
+}
+
+.menujs{
+	height: auto;
+}
+
+.menujs ul{
+	height: auto;
+	text-align: center;
+	padding-top: 0px;
+	padding-left: 120px;
+	padding-right: 120px;
+	padding-bottom: 0;
+
+}
+
+.trabalhos{
+	width: 160px;
+	height: 160px;
+	max-width: 100%;
+	background-size: auto 100%;
+	margin-left: 0;
+	margin-right: 16px;
+	background-size: contain;
+}
+.mobile-pic{
+	width: 120px;
+	height: 240px;
+	max-width: 100%;
+	background-size: auto 100%;
+	margin-left: 0;
+	margin-right: 56px;
+	background-size: contain;
+}
+
+.menujs li{
+	display: block;
+	height: auto;
+	border-bottom: solid grey 1px;
+	margin-top: 16px;
+	line-height: 24px;
+	padding: 0;
+}
+
+}
